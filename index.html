@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div id="cart-icon">
+    <img src="/image/Bag.svg" alt="">
+    <span id="cart-count">0</span>
+  </div>
+
+  <div class="cards">
+    <div class="product-card">
+      <h3>Комплект мебели</h3>
+      <img src="/image/Images1.png" alt="">
+      <p>Цена: $500</p>
+      <input type="number" id="quantity-1" value="0" min="0" >
+      <button onclick="addToCart(1)">Добавить</button>
+      <button onclick="removeFromCart(1)"><img src="/image/Return.svg" alt=""></button>
+    </div>
+
+    <div class="product-card">
+      <h3>Стул дизайнерский</h3>
+      <img src="/image/Images2.png" alt="">
+      <p>Цена: $130</p>
+      <input type="number" id="quantity-2" value="0" min="0">
+      <button onclick="addToCart(2)">Добавить</button>
+      <button onclick="removeFromCart(2)"><img src="/image/Return.svg" alt=""></button>
+    </div>
+
+    <div class="product-card">
+      <h3>Стол</h3>
+      <img src="/image/image3.png" alt="">
+      <p>Цена: $300</p>
+      <input type="number" id="quantity-3" value="0" min="0">
+      <button onclick="addToCart(3)">Добавить</button>
+      <button onclick="removeFromCart(2)"><img src="/image/Return.svg" alt=""></button>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; font-size: large;" id="total-price-1">Общая стоимость</div>
+  <div id="total-price">$0.00</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
